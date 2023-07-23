@@ -1,0 +1,29 @@
+Initial config
+    WSL --install # to use ubuntu/linux promtp in windows
+    En WSL
+        sudo apt install make
+        apt-get update
+        sudo apt install python3.10-venv
+
+Enviroment creation and activation
+    python3 -m venv ~/.py_project1
+    source ~./.py_project1/bin/activate
+
+project_root/
+    ├── Makefile
+    ├── requirements.txt
+    ├── src/
+    │   ├── main.py
+    │   └── module1.py
+    └── tests/
+        └── test_module1.py
+    
+Git
+    git config --global init.defaultBranch main
+    git init
+    git remote add origin https://github.com/sstedoldi/py_project1.git
+    git branch -m main
+    git add .
+    git commit -m "inicial commit"
+
+    git config --list
