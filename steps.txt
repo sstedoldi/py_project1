@@ -7,7 +7,9 @@ Initial config
 
 Enviroment creation and activation
     python3 -m venv ~/.py_project1
-    source ~./.py_project1/bin/activate
+
+Enviroment activation
+    source ~/.py_project1/bin/activate
 
 project_root/
     ├── Makefile
@@ -19,11 +21,13 @@ project_root/
         └── test_module1.py
     
 Git
-    git config --global init.defaultBranch main
+    #git config --global init.defaultBranch main
+    #git config --list
     git init
-    git remote add origin https://github.com/sstedoldi/py_project1.git
     git branch -m main
     git add .
     git commit -m "inicial commit"
+    git remote add origin https://github.com/sstedoldi/py_project1.git
+    git push -u origin main
 
-    git config --list
+
